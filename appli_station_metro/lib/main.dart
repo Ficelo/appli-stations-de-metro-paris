@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get/get.dart';
-
+import 'generated/app_localizations.dart';
 import 'components/database_helper.dart';
 import 'pages/map_page.dart';
 import 'pages/profil_page.dart';
@@ -49,8 +50,18 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Bottom Nav App',
       theme: ThemeData(useMaterial3: true),
-      home: const MainScreen(),
       debugShowCheckedModeBanner: false,
+      localizationsDelegates: [
+        AppLocalizations.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate
+      ],
+      supportedLocales: [
+        Locale('fr'),
+        Locale('en')
+      ],
+      home: MainScreen(),
     );
   }
 }

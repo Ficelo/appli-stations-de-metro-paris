@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:math';
 
+import 'package:appli_station_metro/generated/app_localizations.dart';
 import 'package:appli_station_metro/pages/station_page.dart';
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
@@ -215,6 +216,7 @@ class _HomePageState extends State<HomePage> {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
+                Text(AppLocalizations.of(context)!.helloWorld),
                 Text(
                   "Envie de découvrir une nouvelle station ? Essayez avec :",
                   style: theme.textTheme.titleMedium,
