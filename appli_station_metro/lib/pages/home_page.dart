@@ -216,9 +216,8 @@ class _HomePageState extends State<HomePage> {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Text(AppLocalizations.of(context)!.helloWorld),
                 Text(
-                  "Envie de découvrir une nouvelle station ? Essayez avec :",
+                  AppLocalizations.of(context)!.homeDiscover,
                   style: theme.textTheme.titleMedium,
                   textAlign: TextAlign.center,
                 ),
@@ -231,7 +230,7 @@ class _HomePageState extends State<HomePage> {
 
                   },
                   child: Text(
-                    station?.nom ?? "Chargement...",
+                    station?.nom ?? AppLocalizations.of(context)!.homeLoading,
                     style: theme.textTheme.headlineSmall?.copyWith(
                       fontWeight: FontWeight.bold,
                       color: theme.colorScheme.primary,
@@ -253,7 +252,7 @@ class _HomePageState extends State<HomePage> {
                     width: 20,
                     child: CircularProgressIndicator(strokeWidth: 2),
                   )
-                      : const Text("Afficher les directions"),
+                      : Text(AppLocalizations.of(context)!.homeDirections),
                   onPressed: _loading ? null : _getCurrentLocationAndLaunchMap,
                 ),
               ],

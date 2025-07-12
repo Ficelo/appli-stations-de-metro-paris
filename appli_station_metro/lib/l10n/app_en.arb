@@ -1,7 +1,13 @@
 {
-  "@@locale" : "en",
   "helloWorld": "Hello World!",
-  "@helloWorld": {
-    "description": "The conventional newborn programmer greeting"
-  }
+  "homeDiscover" : "Want to discover a new station ? Try with :",
+  "homeLoading" : "Loading...",
+  "homeDirections" : "Show directions",
+  "stationVisited" : "Marked as visited",
+  "stationNotVisited" : "Not visited",
+  "profileModifyQuestion" : "Modify your username",
+  "profileUsername" : "Username",
+  "profileCancel" : "Cancel",
+  "profileModify" : "Modify",
+  "settingsLanguage" : "Language : "
 }

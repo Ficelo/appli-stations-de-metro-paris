@@ -1,6 +1,17 @@
 {
   "helloWorld": "Bonjour Monde!",
-  "@helloWorld": {
-    "description": "La salutation conventionelle du programmeur novice"
-  }
+
+  "homeDiscover" : "Envie de découvrir une nouvelle station ? Essayez avec :",
+  "homeLoading" : "Chargement...",
+  "homeDirections" : "Afficher les directions",
+
+  "stationVisited" : "Marquée comme visitée",
+  "stationNotVisited" : "Non visitée",
+
+  "profileModifyQuestion" : "Modification de votre nom d'utilisateur",
+  "profileUsername" : "Nom d'utilisateur",
+  "profileCancel" : "Annuler",
+  "profileModify" : "Modifier",
+
+  "settingsLanguage" : "Langue : "
 }
