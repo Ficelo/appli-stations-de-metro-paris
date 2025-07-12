@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:sqflite/sqflite.dart';
 
 import '../components/constants.dart';
+import '../generated/app_localizations.dart';
 import '../models/loader.dart';
 import '../models/station.dart';
 import '../models/user.dart';
@@ -107,14 +108,14 @@ class _ProfilPageState extends State<ProfilPage> {
                                   height: 180,
                                   child: Column(
                                   children: [
-                                    Text("Modification de votre nom d'utilisateur", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold), textAlign: TextAlign.center,),
+                                    Text(AppLocalizations.of(context)!.profileModifyQuestion, style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold), textAlign: TextAlign.center,),
                                     const SizedBox(height: 14.0),
                                     Padding(
                                       padding: EdgeInsets.symmetric(horizontal: 16.0),
                                       child: TextField(
                                         controller: controller,
                                         decoration: InputDecoration(
-                                          labelText: "Nom d'utilisateur",
+                                          labelText: AppLocalizations.of(context)!.profileUsername,
                                           border: OutlineInputBorder(),
                                           contentPadding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                                         ),
@@ -135,7 +136,7 @@ class _ProfilPageState extends State<ProfilPage> {
                                               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
                                               padding: const EdgeInsets.symmetric(vertical: 12),
                                             ),
-                                            child: const Text("Annuler"),
+                                            child: Text(AppLocalizations.of(context)!.profileCancel),
                                           ),
                                         ),
                                         const SizedBox(width: 16), // Space between buttons
@@ -155,7 +156,7 @@ class _ProfilPageState extends State<ProfilPage> {
                                               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
                                               padding: const EdgeInsets.symmetric(vertical: 12),
                                             ),
-                                            child: const Text("Modifier"),
+                                            child: Text(AppLocalizations.of(context)!.profileModify),
                                           ),
                                         ),
                                       ],

@@ -1,0 +1,13 @@
+{
+  "helloWorld": "Hello World!",
+  "homeDiscover" : "Want to discover a new station ? Try with :",
+  "homeLoading" : "Loading...",
+  "homeDirections" : "Show directions",
+  "stationVisited" : "Marked as visited",
+  "stationNotVisited" : "Not visited",
+  "profileModifyQuestion" : "Modify your username",
+  "profileUsername" : "Username",
+  "profileCancel" : "Cancel",
+  "profileModify" : "Modify",
+  "settingsLanguage" : "Language : "
+}

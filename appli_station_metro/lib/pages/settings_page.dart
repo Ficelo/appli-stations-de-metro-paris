@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sqflite/sqflite.dart';
 
 import '../components/database_helper.dart';
+import '../generated/app_localizations.dart';
 import '../models/user.dart';
 
 class SettingsPage extends StatefulWidget {
@@ -44,7 +45,7 @@ class _SettingsPageState extends State<SettingsPage> {
           padding: EdgeInsets.all(16.0),
           child: Row(
               children: [
-                Text("Language : "),
+                Text(AppLocalizations.of(context)!.settingsLanguage),
                 DropdownMenu<String>(
                   initialSelection: _selectedLanguage,
                   onSelected: (String? value) => {

@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:http/http.dart' as http;
 import 'package:shimmer/shimmer.dart';
+import '../generated/app_localizations.dart';
 import '../models/loader.dart';
 import '../models/user.dart';
 
@@ -155,7 +156,7 @@ class _StationPageState extends State<StationPage> {
                   },
                 ),
                 title: Text(
-                  visited ? "Marquée comme visitée" : "Non visitée",
+                  visited ? AppLocalizations.of(context)!.stationVisited : AppLocalizations.of(context)!.stationNotVisited,
                   style: const TextStyle(fontSize: 18),
                 ),
               ),
